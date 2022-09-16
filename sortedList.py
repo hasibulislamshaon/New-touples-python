@@ -1,7 +1,7 @@
-line=open('touples\words.txt','r')
+lines=open('touples\words.txt','r')
 dic=dict()
-for lines in line:
-    words=lines.split()
+for line in lines:
+    words=line.split()
     for word in words:
        dic[word]=dic.get(word,0)+1
 
