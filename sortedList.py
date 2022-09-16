@@ -10,8 +10,11 @@ for k,v in dic.items():
     dictioanry.append((v,k))
 
 dictioanry=sorted(dictioanry,reverse=True)
+x=int(input("Enter the number of touples You wanted: "))
 print(f"Value---Key")
-for v,k in dictioanry[:5]:#number of touples that you wanted
-   print(f" {v}  =  {k}")
+y=0
+for v,k in dictioanry[:x]:#number of touples that you wanted
+   y=y+1
+   print(f"{y}@ {v}  =  {k}")
 
 
